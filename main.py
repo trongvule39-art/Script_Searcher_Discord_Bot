@@ -31,7 +31,7 @@ import validators
 import urllib.parse
 
 load_dotenv()
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = os.getenv("DISCORD_TOKEN")
 FALLBACK_IMAGE = "https://c.tenor.com/jnINmQlMNbsAAAAC/tenor.gif"
 intents = discord.Intents.default()
 intents.message_content = True

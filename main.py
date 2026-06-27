@@ -902,12 +902,12 @@ async def slash_rscripts_by_user(interaction: discord.Interaction, username: str
 async def run_bot():
     while True:
         try:
-            await bot.start(TOKEN)
+            await bot.start(MTUyMDQyMjI1NTI0OTU5MjQ4Mg.GdN-IX.FbkaC0IO2wbumjbOT-pvJmZkyTAAQieO5-RxZk)
         except (discord.ConnectionClosed, discord.GatewayNotFound) as e:
             print(f"Disconnected due to: {e}. Reconnecting in 5 seconds...")
             await asyncio.sleep(5)
 
-if TOKEN:
+if True:
     asyncio.run(run_bot())
 else:
     print("Error: BOT_TOKEN not set in environment.")

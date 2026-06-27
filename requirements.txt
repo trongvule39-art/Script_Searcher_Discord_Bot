@@ -5,3 +5,4 @@ validators
 python-dateutil
 python-Levenshtein
 pytz
+flask

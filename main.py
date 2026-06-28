@@ -31,6 +31,7 @@ import validators
 import urllib.parse
 
 load_dotenv()
+
 TOKEN = os.getenv("DISCORD_TOKEN")
 FALLBACK_IMAGE = "https://c.tenor.com/jnINmQlMNbsAAAAC/tenor.gif"
 intents = discord.Intents.default()
@@ -919,7 +920,7 @@ async def slash_rscripts_by_user(interaction: discord.Interaction, username: str
 async def run_bot():
     while True:
         try:
-            await bot.start(os.getenv("DISCORD_TOKEN"))
+            await bot.start(TOKEN)
         except (discord.ConnectionClosed, discord.GatewayNotFound) as e:
             print(f"Disconnected due to: {e}. Reconnecting in 5 seconds...")
             await asyncio.sleep(5)
